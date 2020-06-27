@@ -24,7 +24,7 @@ mame -listmedia x1
 
 ###########
 
-mame x1 -cassette 'roms/Flappy.tap'
+mame x1 -cass 'roms/Flappy.tap'
 
 ##########
 
@@ -43,6 +43,13 @@ romset x1 is best available
 ##########
 
 mame pc8801 -flop1 'roms/Flappy.d88'
+mame pc8801 -flop1 'roms/King_Flappy.d88'
+
+##########
+
+##########
+
+mame mz800 -nojoy -cass 'roms/Flappy.mzf'
 
 ##########
 
