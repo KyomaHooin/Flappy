@@ -1577,7 +1577,7 @@ static const int key_conv_table[9+4][3] = {
 };
 
 static const uint8 intr_mask2_table[8] = {
-	~7, ~3, ~5, ~1, ~6, ~2, ~4, ~0
+	248, 252, 250, 254, 249, 253, 251, 255
 };
 
 #ifdef SDL
