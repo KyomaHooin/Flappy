@@ -47,9 +47,18 @@ static ip_address=192.168.0.83/24
 static routers=192.168.0.1
 static domain_name_servers=xx.xx.xx.xx xx.xx.xx.xx
 
-systemctl disable apt-daily-upgrade.timer
+systemctl disable avahi-daemon bluetooth paxctld rsync triggerhappy dphys-swapfile apt-daily apt-daily.timer apt-daily-upgrade apt-daily-upgrade.timer
 
+apt-get install libgl1-mesa-dri
 
+raspi-config > Advanced Options > Memory Split > 128
+raspi-config > Advanced Options > GL Driver > Fake KMS
+
+dphys-swapfile swapoff
+dphys-swapfile uninstall
+
+/etc/fstab:
+tmpfs	/tmp	tmpfs	defaults,noatime,nosuid,size=5m	0	0
 </pre>
 
 UART
@@ -58,4 +67,12 @@ UART
 /boot/config.txt:
 
 enable_uart=1
+</pre>
+
+SDL2
+
+<pre>
+wget https://www.libsdl.org/release/SDL2-2.0.14.tar.gz
+
+apt-get install libgles2-mesa-dev libgbm-dev libudev-dev libasound2-dev liblzma-dev
 </pre>
