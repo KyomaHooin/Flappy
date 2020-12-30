@@ -33,11 +33,23 @@ EOF
 
 apt-get install git vim mc
 
+~/.bashrc:
+
+alias vi='vim -c "set vb" -c "syntax enable" -c "set mouse ="'
+
+/etc/rc.local:
+
+/root/firewall &
+
 /etc/dhcpcd.conf:
 interface wlan0
 static ip_address=192.168.0.83/24
 static routers=192.168.0.1
 static domain_name_servers=xx.xx.xx.xx xx.xx.xx.xx
+
+systemctl disable apt-daily-upgrade.timer
+
+
 </pre>
 
 UART
