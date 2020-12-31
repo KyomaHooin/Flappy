@@ -65,7 +65,6 @@ UART
 
 <pre>
 /boot/config.txt:
-
 enable_uart=1
 </pre>
 
@@ -74,5 +73,10 @@ SDL2
 <pre>
 wget https://www.libsdl.org/release/SDL2-2.0.14.tar.gz
 
-apt-get install libgles2-mesa-dev libgbm-dev libudev-dev libasound2-dev liblzma-dev
+apt-get install autoconf libgles2-mesa-dev libgbm-dev libudev-dev libasound2-dev liblzma-dev
+
+autogen.sh
+./configure --enable-video-kmsdrm --disable-video-opengl --disable-video-x11 --disable-video-rpi
+make
+make install
 </pre>
