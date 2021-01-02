@@ -1,0 +1,158 @@
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../UI/app.cpp -o ../UI/app.o
+../UI/app.cpp: In member function ‘void App::Run()’:
+../UI/app.cpp:852:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (draw_tick_point >= SDL_arraysize(draw_tick)) {
+                           ^
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../UI/audio.cpp -o ../UI/audio.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../UI/converter.cpp -o ../UI/converter.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../UI/diskmgr.cpp -o ../UI/diskmgr.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../UI/emu.cpp -o ../UI/emu.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../UI/emu_sdl.cpp -o ../UI/emu_sdl.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../UI/file.cpp -o ../UI/file.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../UI/fileio.cpp -o ../UI/fileio.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../UI/font.cpp -o ../UI/font.o
+../UI/font.cpp: In member function ‘bool Font::Init(SDL_Window*)’:
+../UI/font.cpp:111:43: warning: ISO C++ forbids converting a string constant to ‘_TCHAR* {aka char*}’ [-Wwrite-strings]
+  path = wrapper->get_bios_path(KANJI1_FILE);
+                                           ^
+../UI/font.cpp:118:43: warning: ISO C++ forbids converting a string constant to ‘_TCHAR* {aka char*}’ [-Wwrite-strings]
+  path = wrapper->get_bios_path(KANJI2_FILE);
+                                           ^
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../UI/input.cpp -o ../UI/input.o
+../UI/input.cpp: In member function ‘void Input::DelayedBreak()’:
+../UI/input.cpp:770:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (code=0; code<SDL_arraysize(key_soft_break_flag); code++) {
+                   ^
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../UI/main.cpp -o ../UI/main.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../UI/menu.cpp -o ../UI/menu.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../UI/menuitem.cpp -o ../UI/menuitem.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../UI/menulist.cpp -o ../UI/menulist.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../UI/platform.cpp -o ../UI/platform.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../UI/setting.cpp -o ../UI/setting.o
+../UI/setting.cpp: In member function ‘bool Setting::NextSoftKey()’:
+../UI/setting.cpp:908:13: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (index >= SDL_arraysize(softkey_set)) {
+             ^
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../UI/softkey.cpp -o ../UI/softkey.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../UI/tapemgr.cpp -o ../UI/tapemgr.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../UI/video.cpp -o ../UI/video.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../ePC-8801MA/common.cpp -o ../ePC-8801MA/common.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../ePC-8801MA/config.cpp -o ../ePC-8801MA/config.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../ePC-8801MA/fifo.cpp -o ../ePC-8801MA/fifo.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../ePC-8801MA/vm/disk.cpp -o ../ePC-8801MA/vm/disk.o
+../ePC-8801MA/vm/disk.cpp: In member function ‘void DISK::open(_TCHAR*, int)’:
+../ePC-8801MA/vm/disk.cpp:135:43: warning: ISO C++ forbids converting a string constant to ‘_TCHAR* {aka char*}’ [-Wwrite-strings]
+   if(check_file_extension(path, _T(".d88")) || check_file_extension(path, _T(".d77"))) {
+                                           ^
+../ePC-8801MA/vm/disk.cpp:135:85: warning: ISO C++ forbids converting a string constant to ‘_TCHAR* {aka char*}’ [-Wwrite-strings]
+   if(check_file_extension(path, _T(".d88")) || check_file_extension(path, _T(".d77"))) {
+                                                                                     ^
+../ePC-8801MA/vm/disk.cpp:200:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if(file_size.d == len || (file_size.d == (len + 4096) && (len == 655360 || len == 1261568))) {
+       ~~~~~~~~~~~~^~~~~~
+../ePC-8801MA/vm/disk.cpp:200:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if(file_size.d == len || (file_size.d == (len + 4096) && (len == 655360 || len == 1261568))) {
+                              ~~~~~~~~~~~~^~~~~~~~~~~~~~~
+../ePC-8801MA/vm/disk.cpp:201:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if(file_size.d == len + 4096) {
+        ~~~~~~~~~~~~^~~~~~~~~~~~~
+../ePC-8801MA/vm/disk.cpp: In member function ‘void DISK::close()’:
+../ePC-8801MA/vm/disk.cpp:324:49: warning: ISO C++ forbids converting a string constant to ‘_TCHAR* {aka char*}’ [-Wwrite-strings]
+    if(check_file_extension(dest_path, _T(".d88")) || check_file_extension(dest_path, _T(".d77"))) {
+                                                 ^
+../ePC-8801MA/vm/disk.cpp:324:96: warning: ISO C++ forbids converting a string constant to ‘_TCHAR* {aka char*}’ [-Wwrite-strings]
+    if(check_file_extension(dest_path, _T(".d88")) || check_file_extension(dest_path, _T(".d77"))) {
+                                                                                                ^
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../ePC-8801MA/vm/event.cpp -o ../ePC-8801MA/vm/event.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../ePC-8801MA/vm/i8251.cpp -o ../ePC-8801MA/vm/i8251.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../ePC-8801MA/vm/i8253.cpp -o ../ePC-8801MA/vm/i8253.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../ePC-8801MA/vm/i8255.cpp -o ../ePC-8801MA/vm/i8255.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../ePC-8801MA/vm/disksub.cpp -o ../ePC-8801MA/vm/disksub.o
+../ePC-8801MA/vm/disksub.cpp: In member function ‘virtual void DiskSub::initialize()’:
+../ePC-8801MA/vm/disksub.cpp:92:46: warning: ISO C++ forbids converting a string constant to ‘_TCHAR* {aka char*}’ [-Wwrite-strings]
+  if (fio->Fopen(emu->bios_path(_T("PC88.ROM")), FILEIO_READ_BINARY) == true) {
+                                              ^
+../ePC-8801MA/vm/disksub.cpp:97:46: warning: ISO C++ forbids converting a string constant to ‘_TCHAR* {aka char*}’ [-Wwrite-strings]
+  if (fio->Fopen(emu->bios_path(_T("DISK.ROM")), FILEIO_READ_BINARY) ==  true) {
+                                              ^
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../ePC-8801MA/vm/pcm1bit.cpp -o ../ePC-8801MA/vm/pcm1bit.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../ePC-8801MA/vm/upd765a.cpp -o ../ePC-8801MA/vm/upd765a.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../ePC-8801MA/vm/upd1990a.cpp -o ../ePC-8801MA/vm/upd1990a.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../ePC-8801MA/vm/fmsound.cpp -o ../ePC-8801MA/vm/fmsound.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../ePC-8801MA/vm/z80.cpp -o ../ePC-8801MA/vm/z80.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../ePC-8801MA/vm/fmgen/opna.cpp -o ../ePC-8801MA/vm/fmgen/opna.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../ePC-8801MA/vm/fmgen/psg.cpp -o ../ePC-8801MA/vm/fmgen/psg.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../ePC-8801MA/vm/fmgen/fmgen.cpp -o ../ePC-8801MA/vm/fmgen/fmgen.o
+../ePC-8801MA/vm/fmgen/fmgen.cpp: In member function ‘void FM::Operator::Prepare()’:
+../ePC-8801MA/vm/fmgen/fmgen.cpp:424:10: warning: enumeration value ‘next’ not handled in switch [-Wswitch]
+   switch (eg_phase_)
+          ^
+../ePC-8801MA/vm/fmgen/fmgen.cpp:424:10: warning: enumeration value ‘off’ not handled in switch [-Wswitch]
+../ePC-8801MA/vm/fmgen/fmgen.cpp: In member function ‘void FM::Operator::EGCalc()’:
+../ePC-8801MA/vm/fmgen/fmgen.cpp:607:12: warning: enumeration value ‘next’ not handled in switch [-Wswitch]
+     switch (eg_phase_)
+            ^
+../ePC-8801MA/vm/fmgen/fmgen.cpp:607:12: warning: enumeration value ‘attack’ not handled in switch [-Wswitch]
+../ePC-8801MA/vm/fmgen/fmgen.cpp:607:12: warning: enumeration value ‘off’ not handled in switch [-Wswitch]
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../ePC-8801MA/vm/fmgen/fmtimer.cpp -o ../ePC-8801MA/vm/fmgen/fmtimer.o
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../ePC-8801MA/vm/pc8801/pc88.cpp -o ../ePC-8801MA/vm/pc8801/pc88.o
+../ePC-8801MA/vm/pc8801/pc88.cpp: In member function ‘virtual void PC88::initialize()’:
+../ePC-8801MA/vm/pc8801/pc88.cpp:1616:45: warning: ISO C++ forbids converting a string constant to ‘_TCHAR* {aka char*}’ [-Wwrite-strings]
+  if(fio->Fopen(emu->bios_path(_T("PC88.ROM")), FILEIO_READ_BINARY)) {
+                                             ^
+../ePC-8801MA/vm/pc8801/pc88.cpp:1625:44: warning: ISO C++ forbids converting a string constant to ‘_TCHAR* {aka char*}’ [-Wwrite-strings]
+  if(fio->Fopen(emu->bios_path(_T("N88.ROM")), FILEIO_READ_BINARY)) {
+                                            ^
+../ePC-8801MA/vm/pc8801/pc88.cpp:1629:46: warning: ISO C++ forbids converting a string constant to ‘_TCHAR* {aka char*}’ [-Wwrite-strings]
+  if(fio->Fopen(emu->bios_path(_T("N88_0.ROM")), FILEIO_READ_BINARY)) {
+                                              ^
+../ePC-8801MA/vm/pc8801/pc88.cpp:1633:46: warning: ISO C++ forbids converting a string constant to ‘_TCHAR* {aka char*}’ [-Wwrite-strings]
+  if(fio->Fopen(emu->bios_path(_T("N88_1.ROM")), FILEIO_READ_BINARY)) {
+                                              ^
+../ePC-8801MA/vm/pc8801/pc88.cpp:1637:46: warning: ISO C++ forbids converting a string constant to ‘_TCHAR* {aka char*}’ [-Wwrite-strings]
+  if(fio->Fopen(emu->bios_path(_T("N88_2.ROM")), FILEIO_READ_BINARY)) {
+                                              ^
+../ePC-8801MA/vm/pc8801/pc88.cpp:1641:46: warning: ISO C++ forbids converting a string constant to ‘_TCHAR* {aka char*}’ [-Wwrite-strings]
+  if(fio->Fopen(emu->bios_path(_T("N88_3.ROM")), FILEIO_READ_BINARY)) {
+                                              ^
+../ePC-8801MA/vm/pc8801/pc88.cpp:1645:44: warning: ISO C++ forbids converting a string constant to ‘_TCHAR* {aka char*}’ [-Wwrite-strings]
+  if(fio->Fopen(emu->bios_path(_T("N80.ROM")), FILEIO_READ_BINARY)) {
+                                            ^
+../ePC-8801MA/vm/pc8801/pc88.cpp:1649:47: warning: ISO C++ forbids converting a string constant to ‘_TCHAR* {aka char*}’ [-Wwrite-strings]
+  if(fio->Fopen(emu->bios_path(_T("KANJI1.ROM")), FILEIO_READ_BINARY)) {
+                                               ^
+../ePC-8801MA/vm/pc8801/pc88.cpp:1653:47: warning: ISO C++ forbids converting a string constant to ‘_TCHAR* {aka char*}’ [-Wwrite-strings]
+  if(fio->Fopen(emu->bios_path(_T("KANJI2.ROM")), FILEIO_READ_BINARY)) {
+                                               ^
+../ePC-8801MA/vm/pc8801/pc88.cpp:1661:46: warning: ISO C++ forbids converting a string constant to ‘_TCHAR* {aka char*}’ [-Wwrite-strings]
+  if(fio->Fopen(emu->bios_path(_T("JISYO.ROM")), FILEIO_READ_BINARY)) {
+                                              ^
+../ePC-8801MA/vm/pc8801/pc88.cpp: In member function ‘void PC88::play_tape(_TCHAR*)’:
+../ePC-8801MA/vm/pc8801/pc88.cpp:2786:48: warning: ISO C++ forbids converting a string constant to ‘_TCHAR* {aka char*}’ [-Wwrite-strings]
+   if(check_file_extension(file_path, _T(".n80"))) {
+                                                ^
+In file included from ../ePC-8801MA/vm/pc8801/../pc8801/pc8801.h:94:0,
+                 from ../ePC-8801MA/vm/pc8801/../vm.h:305,
+                 from ../ePC-8801MA/vm/pc8801/pc88.h:15,
+                 from ../ePC-8801MA/vm/pc8801/pc88.cpp:12:
+../ePC-8801MA/vm/pc8801/pc88.cpp: In member function ‘virtual void PC88::save_state(FILEIO*)’:
+../ePC-8801MA/vm/pc8801/../pc8801/../../common.h:42:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+ #define min(a, b) ((a) < (b) ? (a) : (b))
+                    ~~~~^~~~~
+../ePC-8801MA/vm/pc8801/pc88.cpp:4180:20: note: in expansion of macro ‘min’
+    int length_rw = min(length_tmp, sizeof(buffer));
+                    ^~~
+../ePC-8801MA/vm/pc8801/pc88.cpp: In member function ‘virtual bool PC88::load_state(FILEIO*)’:
+../ePC-8801MA/vm/pc8801/../pc8801/../../common.h:42:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+ #define min(a, b) ((a) < (b) ? (a) : (b))
+                    ~~~~^~~~~
+../ePC-8801MA/vm/pc8801/pc88.cpp:4293:20: note: in expansion of macro ‘min’
+    int length_rw = min(length_tmp, sizeof(buffer));
+                    ^~~
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../ePC-8801MA/vm/pc8801/pc8801.cpp -o ../ePC-8801MA/vm/pc8801/pc8801.o
+../ePC-8801MA/vm/pc8801/pc8801.cpp: In destructor ‘VM::~VM()’:
+../ePC-8801MA/vm/pc8801/pc8801.cpp:202:10: warning: deleting object of polymorphic class type ‘DEVICE’ which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
+   delete device;
+          ^~~~~~
+g++ -o xm8 ../UI/app.o ../UI/audio.o ../UI/converter.o ../UI/diskmgr.o ../UI/emu.o ../UI/emu_sdl.o ../UI/file.o ../UI/fileio.o ../UI/font.o ../UI/input.o ../UI/main.o ../UI/menu.o ../UI/menuitem.o ../UI/menulist.o ../UI/platform.o ../UI/setting.o ../UI/softkey.o ../UI/tapemgr.o ../UI/video.o ../ePC-8801MA/common.o ../ePC-8801MA/config.o ../ePC-8801MA/fifo.o ../ePC-8801MA/vm/disk.o ../ePC-8801MA/vm/event.o ../ePC-8801MA/vm/i8251.o ../ePC-8801MA/vm/i8253.o ../ePC-8801MA/vm/i8255.o ../ePC-8801MA/vm/disksub.o ../ePC-8801MA/vm/pcm1bit.o ../ePC-8801MA/vm/upd765a.o ../ePC-8801MA/vm/upd1990a.o ../ePC-8801MA/vm/fmsound.o ../ePC-8801MA/vm/z80.o ../ePC-8801MA/vm/fmgen/opna.o ../ePC-8801MA/vm/fmgen/psg.o ../ePC-8801MA/vm/fmgen/fmgen.o ../ePC-8801MA/vm/fmgen/fmtimer.o ../ePC-8801MA/vm/pc8801/pc88.o ../ePC-8801MA/vm/pc8801/pc8801.o -L/usr/local/lib -Wl,-rpath,/usr/local/lib -Wl,--enable-new-dtags -lSDL2
+strip xm8 

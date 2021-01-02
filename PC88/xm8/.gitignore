@@ -1,0 +1,4 @@
+#ingore compilator files
+*.o
+#ignore binary
+xm8

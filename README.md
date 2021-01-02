@@ -80,3 +80,10 @@ autogen.sh
 make
 make install
 </pre>
+
+FILE
+
+<pre>
+
+PC88/xm8 - PC8801 core by TakedaToshiya / XM8 emulator Tanaka Yasushi(PI).
+
