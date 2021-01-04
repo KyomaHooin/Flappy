@@ -24,15 +24,14 @@ int main(int argc, char *argv[])
 	App *app;
 
 	// initialize SDL
-	ret = SDL_Init( SDL_INIT_VIDEO |
-					SDL_INIT_AUDIO |
-					SDL_INIT_TIMER |
-					SDL_INIT_EVENTS);
-
+	ret = SDL_Init( SDL_INIT_VIDEO | SDL_INIT_AUDIO | SDL_INIT_TIMER | SDL_INIT_EVENTS);
 	if (ret != 0) {
 		fprintf(stderr, "XM8: SDL_Init() failed\n");
 		return 1;
 	}
+
+	//disable cursor
+	SDL_ShowCursor(0);
 
 	// set joystick hint
 	SDL_SetHint(SDL_HINT_ACCELEROMETER_AS_JOYSTICK, "0");

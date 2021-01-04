@@ -350,7 +350,7 @@ bool App::Init()
 
 	// mouse cursor
 	mouse_tick = SDL_GetTicks();
-	SDL_ShowCursor(SDL_ENABLE);
+	//SDL_ShowCursor(SDL_ENABLE);
 
 	// system information
 	system_info = setting->GetSystems();
@@ -891,15 +891,15 @@ void App::Run()
 		}
 
 		// mouse cursor
-		if ((Uint32)(SDL_GetTicks() - mouse_tick) >= setting->GetMouseTime()) {
-			if (setting->GetMouseTime() < MOUSE_INFINITE_TIME) {
-				if (SDL_GetMouseState(NULL, NULL) == 0) {
-					if (SDL_ShowCursor(SDL_QUERY) == SDL_ENABLE) {
-						SDL_ShowCursor(SDL_DISABLE);
-					}
-				}
-			}
-		}
+		//if ((Uint32)(SDL_GetTicks() - mouse_tick) >= setting->GetMouseTime()) {
+		//	if (setting->GetMouseTime() < MOUSE_INFINITE_TIME) {
+		//		if (SDL_GetMouseState(NULL, NULL) == 0) {
+		//			if (SDL_ShowCursor(SDL_QUERY) == SDL_ENABLE) {
+		//				SDL_ShowCursor(SDL_DISABLE);
+		//			}
+		//		}
+		//	}
+		//}
 
 		// softkey
 		input->ProcessList();
@@ -1090,71 +1090,71 @@ void App::Poll(SDL_Event *e)
 		OnWindow(e);
 		break;
 
-	case SDL_MOUSEMOTION:
-		if (e->motion.which != SDL_TOUCH_MOUSEID) {
-			SDL_ShowCursor(SDL_ENABLE);
-			mouse_tick = SDL_GetTicks();
-		}
-		if (app_menu == true) {
-			// menu
-			menu->OnMouseMotion(e);
-		}
-		else {
-			// soft key
-			input->OnMouseMotion(e);
-		}
-		break;
+	//case SDL_MOUSEMOTION:
+	//	if (e->motion.which != SDL_TOUCH_MOUSEID) {
+	//		SDL_ShowCursor(SDL_ENABLE);
+	//		mouse_tick = SDL_GetTicks();
+	//	}
+	//	if (app_menu == true) {
+	//		// menu
+	//		menu->OnMouseMotion(e);
+	//	}
+	//	else {
+	//		// soft key
+	//		input->OnMouseMotion(e);
+	//	}
+	//	break;
 
-	case SDL_MOUSEBUTTONDOWN:
-		if (e->button.which != SDL_TOUCH_MOUSEID) {
-			SDL_ShowCursor(SDL_ENABLE);
-			mouse_tick = SDL_GetTicks();
-		}
-		if (app_menu == true) {
-			// menu
-			menu->OnMouseButtonDown(e);
-		}
-		else {
-			// enter menu ?
-			if ((e->button.which != SDL_TOUCH_MOUSEID) && (e->button.button == SDL_BUTTON_RIGHT)) {
-				// enter menu
-				EnterMenu(MENU_MAIN);
-			}
-			else {
-				// softkey
-				input->OnMouseButtonDown(e);
-			}
-		}
-		break;
+	//case SDL_MOUSEBUTTONDOWN:
+	//	if (e->button.which != SDL_TOUCH_MOUSEID) {
+	//		SDL_ShowCursor(SDL_ENABLE);
+	//		mouse_tick = SDL_GetTicks();
+	//	}
+	//	if (app_menu == true) {
+	//		// menu
+	//		menu->OnMouseButtonDown(e);
+	//	}
+	//	else {
+	//		// enter menu ?
+	//		if ((e->button.which != SDL_TOUCH_MOUSEID) && (e->button.button == SDL_BUTTON_RIGHT)) {
+	//			// enter menu
+	//			EnterMenu(MENU_MAIN);
+	//		}
+	//		else {
+	//			// softkey
+	//			input->OnMouseButtonDown(e);
+	//		}
+	//	}
+	//	break;
 
-	case SDL_MOUSEBUTTONUP:
-		if (e->button.which != SDL_TOUCH_MOUSEID) {
-			SDL_ShowCursor(SDL_ENABLE);
-			mouse_tick = SDL_GetTicks();
-		}
-		if (app_menu == true) {
-			// menu
-			menu->OnMouseButtonUp(e);
-		}
-		else {
-			// softkey
-			input->OnMouseButtonUp(e);
-		}
-		break;
+	//case SDL_MOUSEBUTTONUP:
+	//	if (e->button.which != SDL_TOUCH_MOUSEID) {
+	//		SDL_ShowCursor(SDL_ENABLE);
+	//		mouse_tick = SDL_GetTicks();
+	//	}
+	//	if (app_menu == true) {
+	//		// menu
+	//		menu->OnMouseButtonUp(e);
+	//	}
+	//	else {
+	//		// softkey
+	//		input->OnMouseButtonUp(e);
+	//	}
+	//	break;
 
-	case SDL_MOUSEWHEEL:
-		if (e->wheel.which != SDL_TOUCH_MOUSEID) {
-			SDL_ShowCursor(SDL_ENABLE);
-			mouse_tick = SDL_GetTicks();
-		}
-		if (app_menu == true) {
-			menu->OnMouseWheel(e);
-		}
-		else {
-			// softkey
-			input->OnMouseWheel(e);
-		}
-		break;
+	//case SDL_MOUSEWHEEL:
+	//	if (e->wheel.which != SDL_TOUCH_MOUSEID) {
+	//		SDL_ShowCursor(SDL_ENABLE);
+	//		mouse_tick = SDL_GetTicks();
+	//	}
+	//	if (app_menu == true) {
+	//		menu->OnMouseWheel(e);
+	//	}
+	//	else {
+	//		// softkey
+	//		input->OnMouseWheel(e);
+	//	}
+	//	break;
 
 	case SDL_KEYDOWN:
 		if (app_background == false) {
@@ -1799,7 +1799,7 @@ void App::EnterMenu(int id)
 	system_info = setting->GetSystems();
 
 	// mouse cursor
-	SDL_ShowCursor(SDL_ENABLE);
+	//SDL_ShowCursor(SDL_ENABLE);
 
 	// input
 	input->LostFocus();
