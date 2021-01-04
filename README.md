@@ -59,6 +59,11 @@ dphys-swapfile uninstall
 
 /etc/fstab:
 tmpfs	/tmp	tmpfs	defaults,noatime,nosuid,size=5m	0	0
+tmpfs	/var/log	tmpfs	defaults,noatime,nosuid,mode=0755,size=5m	0	0
+
+/etc/default/keyboard:
+
+XKBLAYOUT='us'
 </pre>
 
 UART
