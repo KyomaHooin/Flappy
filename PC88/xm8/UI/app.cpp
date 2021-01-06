@@ -649,7 +649,7 @@ void App::Run()
 	Load(0);
 
 	// enter menu
-	EnterMenu(MENU_MAIN);
+	//EnterMenu(MENU_MAIN);
 #endif // __ANDROID__
 
 	// main loop
