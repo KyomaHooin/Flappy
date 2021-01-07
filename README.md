@@ -103,7 +103,6 @@ TODO:
 
 -Screen.
 -Compilation.
--Disable sound.
--Hide menu.
+-Disable sound, softkey, statusbar.
 -Default setttings.
 </pre>

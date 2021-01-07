@@ -98,7 +98,7 @@
 #endif // __ANDROID__
 
 // input
-#define DEFAULT_SOFTKEY_ALPHA		0x60
+#define DEFAULT_SOFTKEY_ALPHA		0x00
 										// alpha blending level for softkey
 #define DEFAULT_SOFTKEY_TIME		4000
 										// softkey timeout (ms)
