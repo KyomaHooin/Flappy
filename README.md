@@ -93,16 +93,17 @@ FILE
 PC88/xm8 - PC8801 core by TakedaToshiya / XM8 emulator Tanaka Yasushi(PI).
 
 Kana           = [Scroll Lock]
-Exit           = [Esc]
-Control        = [2][4][6][8]
+Control        = [2] [4] [6] [8]
 Shoot          = [Space]
-Game Menu      = [F1][F2][F3]
+Game menu      = [F1] [F2] [F3]
+
+Exit           = [F8]
 Menu           = [F11]
 
 TODO:
 
 -Screen.
 -Compilation.
--Disable sound, softkey, statusbar.
+-Disable sound, softkey, statusbar, menu.
 -Default setttings.
 </pre>

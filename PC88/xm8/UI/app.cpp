@@ -1478,9 +1478,16 @@ void App::OnKeyDown(SDL_Event *e)
 		}
 	}
 
-	// F11
+	// F11 (menu)
 	if (code == SDL_SCANCODE_F11) {
 		EnterMenu(MENU_MAIN);
+		return;
+	}
+
+	// F8 (quit)
+	if (code == SDL_SCANCODE_F8) {
+		// quit
+		app_quit = true;
 		return;
 	}
 
@@ -1529,8 +1536,13 @@ void App::OnKeyUp(SDL_Event *e)
 		}
 	}
 
-	// F11
+	// F11 (catch menu)
 	if (code == SDL_SCANCODE_F11) {
+		return;
+	}
+
+	// F8 (catch quit)
+	if (code == SDL_SCANCODE_F8) {
 		return;
 	}
 
