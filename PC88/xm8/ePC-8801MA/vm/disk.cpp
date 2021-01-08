@@ -195,7 +195,7 @@ void DISK::open(_TCHAR path[], int bank)
 			if(p->type == -1) {
 				break;
 			}
-			int len = p->ncyl * p->nside * p->nsec * p->size;
+			unsigned int len = p->ncyl * p->nside * p->nsec * p->size;
 			// 4096 bytes: FDI header ???
 			if(file_size.d == len || (file_size.d == (len + 4096) && (len == 655360 || len == 1261568))) {
 				if(file_size.d == len + 4096) {

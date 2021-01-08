@@ -895,7 +895,7 @@ bool Setting::NextSoftKey()
 {
 	unsigned int loop;
 	int current;
-	int index;
+	unsigned int index;
 
 	// get current
 	current = GetSoftKeyType();

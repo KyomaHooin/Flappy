@@ -219,7 +219,7 @@ private:
 										// calculate frame rate
 	Uint32 draw_tick_count;
 										// calculate frame rate
-	int draw_tick_point;
+	unsigned int draw_tick_point;
 										// calculate frame rate
 
 	// mouse

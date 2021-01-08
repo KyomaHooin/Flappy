@@ -58,13 +58,6 @@ g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../U
 g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../ePC-8801MA/vm/fmgen/fmgen.cpp -o ../ePC-8801MA/vm/fmgen/fmgen.o
 g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../ePC-8801MA/vm/fmgen/fmtimer.cpp -o ../ePC-8801MA/vm/fmgen/fmtimer.o
 g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../ePC-8801MA/vm/pc8801/pc88.cpp -o ../ePC-8801MA/vm/pc8801/pc88.o
-../ePC-8801MA/vm/pc8801/pc88.cpp: In member function ‘virtual void PC88::initialize()’:
-../ePC-8801MA/vm/pc8801/pc88.cpp:1616:31: error: expected primary-expression before ‘char’
-  if(fio->Fopen(emu->bios_path(char *)"PC88.ROM"), FILEIO_READ_BINARY)) {
-                               ^~~~
-../ePC-8801MA/vm/pc8801/pc88.cpp:1616:70: error: expected primary-expression before ‘)’ token
-  if(fio->Fopen(emu->bios_path(char *)"PC88.ROM"), FILEIO_READ_BINARY)) {
-                                                                      ^
 In file included from ../ePC-8801MA/vm/pc8801/../pc8801/pc8801.h:94:0,
                  from ../ePC-8801MA/vm/pc8801/../vm.h:305,
                  from ../ePC-8801MA/vm/pc8801/pc88.h:15,
@@ -83,5 +76,6 @@ In file included from ../ePC-8801MA/vm/pc8801/../pc8801/pc8801.h:94:0,
 ../ePC-8801MA/vm/pc8801/pc88.cpp:4293:20: note: in expansion of macro ‘min’
     int length_rw = min(length_tmp, sizeof(buffer));
                     ^~~
-makefile:43: recipe for target '../ePC-8801MA/vm/pc8801/pc88.o' failed
-make: *** [../ePC-8801MA/vm/pc8801/pc88.o] Error 1
+g++ -DSDL -D_PC8801MA -c -O2 -Wall -I/usr/local/include/SDL2 -D_REENTRANT -I../UI -I../ePC-8801MA -I../ePC-8801MA/vm -I../ePC-8801MA/vm/pc8801 -I../ePC-8801MA/vm/fmgen ../ePC-8801MA/vm/pc8801/pc8801.cpp -o ../ePC-8801MA/vm/pc8801/pc8801.o
+g++ -o xm8 ../UI/app.o ../UI/audio.o ../UI/converter.o ../UI/diskmgr.o ../UI/emu.o ../UI/emu_sdl.o ../UI/file.o ../UI/fileio.o ../UI/font.o ../UI/input.o ../UI/main.o ../UI/menu.o ../UI/menuitem.o ../UI/menulist.o ../UI/platform.o ../UI/setting.o ../UI/softkey.o ../UI/tapemgr.o ../UI/video.o ../ePC-8801MA/common.o ../ePC-8801MA/config.o ../ePC-8801MA/fifo.o ../ePC-8801MA/vm/disk.o ../ePC-8801MA/vm/event.o ../ePC-8801MA/vm/i8251.o ../ePC-8801MA/vm/i8253.o ../ePC-8801MA/vm/i8255.o ../ePC-8801MA/vm/disksub.o ../ePC-8801MA/vm/pcm1bit.o ../ePC-8801MA/vm/upd765a.o ../ePC-8801MA/vm/upd1990a.o ../ePC-8801MA/vm/fmsound.o ../ePC-8801MA/vm/z80.o ../ePC-8801MA/vm/fmgen/opna.o ../ePC-8801MA/vm/fmgen/psg.o ../ePC-8801MA/vm/fmgen/fmgen.o ../ePC-8801MA/vm/fmgen/fmtimer.o ../ePC-8801MA/vm/pc8801/pc88.o ../ePC-8801MA/vm/pc8801/pc8801.o -L/usr/local/lib -Wl,-rpath,/usr/local/lib -Wl,--enable-new-dtags -lSDL2
+strip xm8 

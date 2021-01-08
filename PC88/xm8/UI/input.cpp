@@ -765,7 +765,7 @@ void Input::OnKeyUp(bool soft, SDL_Scancode code)
 //
 void Input::DelayedBreak()
 {
-	int code;
+	unsigned int code;
 
 	for (code=0; code<SDL_arraysize(key_soft_break_flag); code++) {
 		// delayed braek required ?
