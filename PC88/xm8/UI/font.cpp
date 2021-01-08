@@ -108,14 +108,14 @@ bool Font::Init(SDL_Window *win)
 	wrapper = app->GetWrapper();
 
 	// kanji 1
-	path = wrapper->get_bios_path(KANJI1_FILE);
+	path = wrapper->get_bios_path((char *)KANJI1_FILE);
 	if (fio.Fopen(path, FILEIO_READ_BINARY) == true) {
 		fio.Fread(kanji_rom, 1, sizeof(kanji_rom) / 2);
 		fio.Fclose();
 	}
 
 	// kanji 2
-	path = wrapper->get_bios_path(KANJI2_FILE);
+	path = wrapper->get_bios_path((char *)KANJI2_FILE);
 	if (fio.Fopen(path, FILEIO_READ_BINARY) == true) {
 		fio.Fread(&kanji_rom[sizeof(kanji_rom) / 2], 1, sizeof(kanji_rom) / 2);
 		fio.Fclose();

@@ -89,12 +89,12 @@ void DiskSub::initialize()
 
 	// read ROM (both PC88.ROM and DISK.ROM)
 	fio = new FILEIO;
-	if (fio->Fopen(emu->bios_path(_T("PC88.ROM")), FILEIO_READ_BINARY) == true) {
+	if (fio->Fopen(emu->bios_path((char *)"PC88.ROM"), FILEIO_READ_BINARY) == true) {
 		fio->Fseek(0x14000, FILEIO_SEEK_CUR);
 		fio->Fread(&memory[0], 1, 0x2000);
 		fio->Fclose();
 	}
-	if (fio->Fopen(emu->bios_path(_T("DISK.ROM")), FILEIO_READ_BINARY) ==  true) {
+	if (fio->Fopen(emu->bios_path((char *)"DISK.ROM"), FILEIO_READ_BINARY) ==  true) {
 		fio->Fread(&memory[0], 1, 0x2000);
 		fio->Fclose();
 	}

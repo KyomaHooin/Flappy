@@ -132,7 +132,7 @@ void DISK::open(_TCHAR path[], int bank)
 		write_protected = fi->IsProtected(path);
 		
 		// is this d88 format ?
-		if(check_file_extension(path, _T(".d88")) || check_file_extension(path, _T(".d77"))) {
+		if(check_file_extension(path, (char *)".d88") || check_file_extension(path, (char *)".d77")) {
 			uint32 offset = 0;
 			for(int i = 0; i < bank; i++) {
 				fi->Fseek(offset + 0x1c, SEEK_SET);
@@ -321,7 +321,7 @@ void DISK::close()
 			uint8 *pre_buffer = NULL, *post_buffer = NULL;
 			
 			// is this d88 format ?
-			if(check_file_extension(dest_path, _T(".d88")) || check_file_extension(dest_path, _T(".d77"))) {
+			if(check_file_extension(dest_path, (char *)".d88") || check_file_extension(dest_path, (char *)".d77")) {
 				if(fio->Fopen(dest_path, FILEIO_READ_BINARY)) {
 					fio->Fseek(0, FILEIO_SEEK_END);
 					uint32 total_size = fio->Ftell(), offset = 0;

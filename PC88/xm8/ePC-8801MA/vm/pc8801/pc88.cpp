@@ -1613,7 +1613,7 @@ void PC88::initialize()
 	
 	// load rom images
 	FILEIO* fio = new FILEIO();
-	if(fio->Fopen(emu->bios_path(_T("PC88.ROM")), FILEIO_READ_BINARY)) {
+	if(fio->Fopen(emu->bios_path((char *)"PC88.ROM"), FILEIO_READ_BINARY)) {
 		fio->Fread(n88rom, 0x8000, 1);
 		fio->Fread(n80rom + 0x6000, 0x2000, 1);
 		fio->Fseek(0x2000, FILEIO_SEEK_CUR);
@@ -1622,35 +1622,35 @@ void PC88::initialize()
 		fio->Fread(n80rom, 0x6000, 1);
 		fio->Fclose();
 	}
-	if(fio->Fopen(emu->bios_path(_T("N88.ROM")), FILEIO_READ_BINARY)) {
+	if(fio->Fopen(emu->bios_path((char *)"N88.ROM"), FILEIO_READ_BINARY)) {
 		fio->Fread(n88rom, 0x8000, 1);
 		fio->Fclose();
 	}
-	if(fio->Fopen(emu->bios_path(_T("N88_0.ROM")), FILEIO_READ_BINARY)) {
+	if(fio->Fopen(emu->bios_path((char *)"N88_0.ROM"), FILEIO_READ_BINARY)) {
 		fio->Fread(n88exrom + 0x0000, 0x2000, 1);
 		fio->Fclose();
 	}
-	if(fio->Fopen(emu->bios_path(_T("N88_1.ROM")), FILEIO_READ_BINARY)) {
+	if(fio->Fopen(emu->bios_path((char *)"N88_1.ROM"), FILEIO_READ_BINARY)) {
 		fio->Fread(n88exrom + 0x2000, 0x2000, 1);
 		fio->Fclose();
 	}
-	if(fio->Fopen(emu->bios_path(_T("N88_2.ROM")), FILEIO_READ_BINARY)) {
+	if(fio->Fopen(emu->bios_path((char *)"N88_2.ROM"), FILEIO_READ_BINARY)) {
 		fio->Fread(n88exrom + 0x4000, 0x2000, 1);
 		fio->Fclose();
 	}
-	if(fio->Fopen(emu->bios_path(_T("N88_3.ROM")), FILEIO_READ_BINARY)) {
+	if(fio->Fopen(emu->bios_path((char *)"N88_3.ROM"), FILEIO_READ_BINARY)) {
 		fio->Fread(n88exrom + 0x6000, 0x2000, 1);
 		fio->Fclose();
 	}
-	if(fio->Fopen(emu->bios_path(_T("N80.ROM")), FILEIO_READ_BINARY)) {
+	if(fio->Fopen(emu->bios_path((char *)"N80.ROM"), FILEIO_READ_BINARY)) {
 		fio->Fread(n80rom, 0x8000, 1);
 		fio->Fclose();
 	}
-	if(fio->Fopen(emu->bios_path(_T("KANJI1.ROM")), FILEIO_READ_BINARY)) {
+	if(fio->Fopen(emu->bios_path((char *)"KANJI1.ROM"), FILEIO_READ_BINARY)) {
 		fio->Fread(kanji1, 0x20000, 1);
 		fio->Fclose();
 	}
-	if(fio->Fopen(emu->bios_path(_T("KANJI2.ROM")), FILEIO_READ_BINARY)) {
+	if(fio->Fopen(emu->bios_path((char *)"KANJI2.ROM"), FILEIO_READ_BINARY)) {
 		fio->Fread(kanji2, 0x20000, 1);
 		fio->Fclose();
 	}
@@ -1658,7 +1658,7 @@ void PC88::initialize()
 #ifdef SDL
 	xm8_ext_flags = XM8_EXT_NO_DICROM;
 #endif // SDL
-	if(fio->Fopen(emu->bios_path(_T("JISYO.ROM")), FILEIO_READ_BINARY)) {
+	if(fio->Fopen(emu->bios_path((char *)"JISYO.ROM"), FILEIO_READ_BINARY)) {
 		fio->Fread(dicrom, 0x80000, 1);
 		fio->Fclose();
 #ifdef SDL
@@ -2783,7 +2783,7 @@ void PC88::play_tape(_TCHAR* file_path)
 	close_tape();
 	
 	if(cmt_fio->Fopen(file_path, FILEIO_READ_BINARY)) {
-		if(check_file_extension(file_path, _T(".n80"))) {
+		if(check_file_extension(file_path, (char *)".n80")) {
 			cmt_fio->Fread(ram + 0x8000, 0x7f40, 1);
 			cmt_fio->Fclose();
 			d_cpu->set_sp(ram[0xff3e] | (ram[0xff3f] << 8));
