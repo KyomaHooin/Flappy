@@ -4172,7 +4172,7 @@ void PC88::save_state(FILEIO* state_fio)
 	state_fio->FputBool(cmt_rec);
 	state_fio->Fwrite(rec_file_path, sizeof(rec_file_path), 1);
 	if(cmt_rec && cmt_fio->IsOpened()) {
-		int length_tmp = (int)cmt_fio->Ftell();
+		unsigned int length_tmp = (int)cmt_fio->Ftell();
 		cmt_fio->Fseek(0, FILEIO_SEEK_SET);
 		state_fio->FputInt32(length_tmp);
 		while(length_tmp != 0) {
@@ -4285,7 +4285,7 @@ bool PC88::load_state(FILEIO* state_fio)
 	cmt_play = state_fio->FgetBool();
 	cmt_rec = state_fio->FgetBool();
 	state_fio->Fread(rec_file_path, sizeof(rec_file_path), 1);
-	int length_tmp = state_fio->FgetInt32();
+	unsigned int length_tmp = state_fio->FgetInt32();
 	if(cmt_rec) {
 		cmt_fio->Fopen(rec_file_path, FILEIO_READ_WRITE_NEW_BINARY);
 		while(length_tmp != 0) {
