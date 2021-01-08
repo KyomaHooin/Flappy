@@ -9,7 +9,6 @@ https://sourceforge.net/projects/mz800emu/
 
 PC-88
 
-https://www.eonet.ne.jp/~showtime/quasi88/
 http://retropc.net/pi/
 
 RPI
@@ -86,11 +85,11 @@ make
 make install
 </pre>
 
-FILE
+PC88
 
 <pre>
 
-PC88/xm8 - PC8801 core by TakedaToshiya / XM8 emulator Tanaka Yasushi(PI).
+PC88/xm8 - PC8801 core by Takeda Toshiya | XM8 emulator by Tanaka Yasushi(PI).
 
 Kana           = [Scroll Lock]
 Control        = [2] [4] [6] [8]
@@ -103,7 +102,6 @@ Menu           = [F11]
 TODO:
 
 -Screenshot.
--Compilation check unsigned int.
 -Disable sound, softkey, statusbar, menu.
 -Default setttings.
 -Default reset.
