@@ -102,8 +102,9 @@ Menu           = [F11]
 
 TODO:
 
--Screen.
--Compilation.
+-Screenshot.
+-Compilation check unsigned int.
 -Disable sound, softkey, statusbar, menu.
 -Default setttings.
+-Default reset.
 </pre>
