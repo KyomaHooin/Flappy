@@ -101,7 +101,6 @@ Menu           = [F11]
 
 TODO:
 
--Screenshot.
 -Disable sound, softkey, statusbar, menu.
 -Default setttings.
 -Default reset.
