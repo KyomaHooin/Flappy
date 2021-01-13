@@ -101,6 +101,8 @@ Menu           = [F11]
 
 TODO:
 
+-TOSEC dump info flag.
+-Patch 'RO' kana mapping.
 -Disable sound, softkey, statusbar, menu.
 -Default setttings.
 -Default reset.
