@@ -85,6 +85,8 @@ make
 make install
 </pre>
 
+![PC88]<https://github.com/kyomahooin/Flappy/raw/master/King_Flappy.png "King Flappy">
+
 PC88
 
 <pre>
@@ -102,7 +104,13 @@ Menu           = [F11]
 TODO:
 
 -TOSEC dump info flag.
--Patch 'RO' kana mapping.
+-Patch 'RO' kana mapping:
+
+showkey -s
+
+ 86 <> -> ?
+ 87 = F11
+
 -Disable sound, softkey, statusbar, menu.
 -Default setttings.
 -Default reset.
