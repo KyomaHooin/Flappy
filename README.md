@@ -85,9 +85,14 @@ make
 make install
 </pre>
 
-![PC88]<https://github.com/kyomahooin/Flappy/raw/master/King_Flappy.png "King Flappy">
 
-PC88
+![PC88](https://github.com/kyomahooin/Flappy/raw/master/Flappy_PC88.png "Flappy")
+
+POC88 - Flappy [1983]
+
+![PC88](https://github.com/kyomahooin/Flappy/raw/master/King_Flappy_PC88.png "King Flappy")
+
+PC88 - King Flappy [1985]
 
 <pre>
 
@@ -101,9 +106,35 @@ Game menu      = [F1] [F2] [F3]
 Exit           = [F8]
 Menu           = [F11]
 
+PC88 ROM:
+
+DISK.ROM
+FONT.ROM
+KANJI1.ROM
+KANJI2.ROM
+N80.ROM
+N88.ROM
+N88_0.ROM
+N88_2.ROM
+N88_3.ROM
+N88_4.ROM
+
+FLAPPY ROM:
+
+Flappy.d88
+Flappy_a.d88
+Flappy_a2.d88
+King_Flappy.d88
+King_Flappy_a.d88
+
+[aN] = Alternative ROM. (TOSEC dump info)
+
+CHEAT:
+
+cheat.txt
+
 TODO:
 
--TOSEC dump info flag.
 -Patch 'RO' kana mapping:
 
 showkey -s
