@@ -29,4 +29,5 @@ PPRiRE		(kana)			100-105
 GOJIr		(kana)			105-110
 EROOOA		(kana)			110-115
 HIdEbU		(kana)			115-120
+JEBI		(kana)			120-125
 
