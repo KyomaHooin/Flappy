@@ -105,9 +105,10 @@ Game menu      = [F1] [F2] [F3]
 
 Exit           = [F8]
 Menu           = [F11]
-
+</pre>
 PC88 ROM:
 
+<pre>
 DISK.ROM
 FONT.ROM
 KANJI1.ROM
@@ -118,9 +119,11 @@ N88_0.ROM
 N88_2.ROM
 N88_3.ROM
 N88_4.ROM
+</pre>
 
-FLAPPY ROM:
+Flappy ROM:
 
+<pre>
 Flappy.d88
 Flappy_a.d88
 Flappy_a2.d88
@@ -128,13 +131,11 @@ King_Flappy.d88
 King_Flappy_a.d88
 
 [aN] = Alternative ROM. (TOSEC dump info)
+</pre>
 
-CHEAT:
+TODO
 
-cheat.txt
-
-TODO:
-
+<pre>
 -Patch 'RO' kana mapping:
 
 showkey -s
