@@ -1,33 +1,33 @@
 
 PC88 Flappy:
 
-HAJIMARI	(kana)
+ハジマリ	1-10
 
 PC88 King Flappy:
 
-88SR!					1-5
-IKONISUCHI	(kana)			5-10
-MidSh					10-15
-1-414		(short -)		15-20
-+-x/=					20-25
-2ji34bun	(kanji)			25-30
-ankO		(zero?)			30-35
-HIpePE		(kana)			35-40
-LA459					40-45
-TENISHIKAKU	(kana)			45-50
-SORARIRASU	(kana)			50-55
-1+2=3					55-60
-NorMa					60-65
-GaKKo					65-70
-2-236					70-75
-mIckKO		(kana/ m -> h)		75-80
-+-10%					80-85
-1pZUI		(kana)			85-90
-|=oVo=|		(special char)		90-95
-bRinG					95-100
-PPRiRE		(kana)			100-105
-GOJIr		(kana)			105-110
-EROOOA		(kana)			110-115
-HIdEbU		(kana)			115-120
-JEBI		(kana)			120-125
+88SR!		1-5
+イコニスチ	5-10
+MidSh		10-15
+1-414		15-20
++−x/=		20-25
+2時34分		25-30
+ankoロ		30-35
+ヒpeペ		35-40
+LA459		40-45
+テニシカク	45-50
+ソラリラス	50-55
+1+2=3		55-60
+NorMa		60-65
+GaKKo		65-70
+2-236		70-75
+hIckコ		75-80
++−10%		80-85
+1pズイ		85-90 ?
+|=●♠●=|		(special char)		90-95 ?
+bRinG		95-100
+PPRiレ		100-105
+ゴジr		105-110
+エロオオア 	110-115
+ヒdEbU		115-120
+ジェビ		120-125
 
