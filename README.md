@@ -147,3 +147,60 @@ showkey -s
 -Default setttings.
 -Default reset.
 </pre>
+
+MAME
+
+<pre>
+apt-get install libgl1
+apt-get install qt5-default
+
+./mame -cc
+
+mame.ini tunning
+
+[mame pc8801]
+[mame x1]
+
+mame -listfull x1
+mame -listfull pc8801
+
+mame -listroms x1
+mame -listroms pc8801
+
+sha1sum iplrom.x1
+
+mame -listmedia x1
+
+./castool convert x1 'roms/Flappy.tap' 'roms/Flappy.wav'
+
+###########
+
+mame x1 -cass 'roms/Flappy.tap'
+
+##########
+
+Choccyhobnob mame.ini performace
+
+# ./mame -verifyroms pc8801
+romset pc8801 is good
+1 romsets found, 1 were OK.
+
+i# ./mame -verifyroms x1
+x1          : 80c48 (4096 bytes) - NOT FOUND - NO GOOD DUMP KNOWN
+x1          : ank.fnt (8192 bytes) - NEEDS REDUMP
+romset x1 is best available
+1 romsets found, 1 were OK.
+
+##########
+
+mame pc8801 -flop1 'roms/Flappy.d88'
+mame pc8801 -flop1 'roms/King_Flappy.d88'
+
+##########
+
+##########
+
+mame mz800 -nojoy -cass 'roms/Flappy.mzf'
+
+##########
+</pre>
