@@ -22,10 +22,8 @@ NEC PC88 Flappy:
 		180-190
 		190-200
 
-NEC PC88 King Flappy:
-
-| King Flappy | level |
-| --- | --- |
+| PC88  | King Flappy |
+| :---: | :---: |
 | 88SR!		| 1-5 |
 | イコニスチ	| 6-10 |
 | MidSh		| 11-15 |
@@ -61,7 +59,7 @@ NEC PC88 King Flappy:
 | 11922		| 160-165 |
 | [¥]=@		| 165-170 |
 | ANDIO		| 170-175 |
-		175-180
+| MEDIa		| 175-180 |
 		180-185
 		185-190
 		190-195
