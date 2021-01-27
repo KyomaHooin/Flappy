@@ -790,6 +790,7 @@ void Video::Draw()
 	// clear draw_ctrl
 	draw_ctrl = false;
 	draw_line = SCREEN_HEIGHT;
+
 }
 
 //
