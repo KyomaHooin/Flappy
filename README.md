@@ -85,7 +85,6 @@ make
 make install
 </pre>
 
-
 ![PC88](https://github.com/kyomahooin/Flappy/raw/master/Flappy_PC88.png "Flappy")
 
 POC88 - Flappy [1983]
@@ -139,13 +138,6 @@ King_Flappy_a.d88 [345021bcb1c67ab7ddd1aa379628f791b0bc79fe]
 TODO
 
 <pre>
--Patch 'RO' kana mapping:
-
-showkey -s
-
- 86 <> -> ?
- 87 = F11
-
 -Disable sound, softkey, statusbar, menu.
 -Default setttings.
 -Default reset.
