@@ -1,0 +1,17 @@
+Flappy		
+	[Compilation] CDOS Pack (Disk 4).d88	
+		5
+	[Compilation] Old Game Pack (Disk 01).d88	
+		7
+	[Compilation] Super System 88 pack.d88	
+		5, F5
+	[Compilation] Super-88 Pack (Disk 06).d88	
+		2
+	[Compilation] Sweet-88 pack (Disk 1).d88	
+		.17
+	[Compilation] T88-DOS pack (Disk 1) {V1 mode}.d88	
+		3
+	[Compilation] Unnamed 17-pack (Disk 08).d88	
+		F3, 5
+	[Compilation] Unnamed 17-pack (Disk 15).d88	
+		boot from Disk 13, swap with Disk 15, bload"auto",r, 11
