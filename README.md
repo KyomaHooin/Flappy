@@ -207,22 +207,3 @@ mame mz800 -nojoy -cass 'roms/Flappy.mzf'
 
 ##########
 </pre>
-3b31fc68fa7f47b21c1a1cb027b86b9e87afbfff  ./N88.ROM
-d239c26ad7ac5efac6e947b0e9549b1534aa970d  ./N88_0.ROM
-8528eef7946edf6501a6ccb1f416b60c64efac7c  ./N88_1.ROM
-bb7103a0818850a039c67ff666a31ce49a8d516f  ./DISK.ROM
-82e11a177af6a5091dd67f50a2f4bafda84d6556  ./KANJI1.ROM
-b7c8bcea219b77d9cc3ee0efafe343cc307425d1  ./N88_2.ROM
-efce0b51cab9f0da6cf68507757f1245a2867a72  ./N88_3.ROM
-5b922ed9de07d2a729bdf1da7b57c50ddf08809a  ./N80.ROM
-5b922ed9de07d2a729bdf1da7b57c50ddf08809a  ./N88N.ROM
-607db1d7affacaa4839d54c2c649602322b931bf  ./PC88.ROM
-425a896af83386c7bafac59f94211cdbb9cce18d  ./FONT.ROM
-7e6591cd465cbb35d6d3446c5a83b46d30fafe95  ./KANJI2.ROM
-
-
-73395ab7b4dfdda930906986540b4c5b0b2e5a20  ./King_Flappy.d88
-5221dbd3f71b3515df486de754e2f4065a73a60c  ./Flappy_a2.d88
-083caf374c14b25190677adeec1e1e0cb203e190  ./Flappy_a.d88
-703212fb302c1b6aa99ee17dbe33ef68ccc0a622  ./Flappy.d88
-345021bcb1c67ab7ddd1aa379628f791b0bc79fe  ./King_Flappy_a.d88
