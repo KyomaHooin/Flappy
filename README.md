@@ -148,6 +148,9 @@ TODO
 MAME
 
 <pre>
+
+https://gist.github.com/sonicprod/f5a7bb10fb9ed1cc5124766831e120c4
+
 apt-get install libgl1
 apt-get install qt5-default
 
