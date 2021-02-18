@@ -137,7 +137,26 @@ Flappy ROM:
 [aN] = Alternative ROM. (TOSEC dump info)
 </pre>
 
+PC98
+
+<pre>
+M. Isida
+N. Sinada
+T. Kobayashi
+S. Matuno
+O. Takadono
+1990 dB-SOFT
+
+F1 - End.
+F5 - Menu.
+Esc - Exit.
+Space -Shoot.
+</pre>
+
 TODO
+
+
+
 
 <pre>
 -Disable sound, softkey, statusbar, menu.

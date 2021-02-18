@@ -1,4 +1,37 @@
 
+| GB | Flappy Special |
+
+|A20F
+|A307
+|A3GB
+|A3O9
+|A40C
+|A60C
+|A704
+|A7G8
+|A7OE
+|A80D
+|AA0D
+|AB05
+|ABG9
+|
+|ABKE
+|
+
+A20S
+A30K
+A3GO
+A3OU
+A40T
+A60T
+A70L
+A7GP
+A7OV
+A80I
+AA0I
+AB0Q
+ABGU
+ABOS
 
 | PC88 | Flappy |
 | :---: | :---: |
