@@ -147,10 +147,18 @@ S. Matuno
 O. Takadono
 1990 dB-SOFT
 
+Longer head crash delay.
+
 F1 - End.
 F5 - Menu.
 Esc - Exit.
 Space -Shoot.
+</pre>
+
+GB
+
+<pre>
+Can crash grey stone falling on head pressing up. 
 </pre>
 
 TODO

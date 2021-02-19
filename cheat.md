@@ -1,18 +1,24 @@
 
-| GB | Flappy Special |
+| GB | Flappy Special A | | | | | | | | |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+|      | A20F | A307 | A3GB | A3O9 | A40C | A60C | A704 | A7G8 | A7OE |
+| A80D | AA0D | AB05 | ABG9 | ABKE | AC02 | AE02 | AF0A | AFGE | AFOC |
+| AG0B | AI0B | AJ0B | AGGF | AJOD | AK00 | AM00 | AN08 | ANGC | ANO2 |
+| AO01 | AR09 | ARGD | ARO3 | AS06 | AU06 | AV0E | AVG2 | AVO0 | B007 |
+| B207 | B307 | B3G3 | B3O1 | B404 | B604 | B70C | B7G0 | B7O6 | B805 |
+| BA05 |
 
-| A20F | A307 | A3GB | A3O9 | A40C | A60C | A704 | A7G8 | A7OE | A80D |
-| AA0D | AB05 | ABG9 |      | ABKE |
 
-| A20S | A30K | A3GO | A3OU | A40T | A60T | A70L | A7GP | A7OV | A80I |
-| AA0I | AB0Q | ABGU | ABOS | AC0J | AE0J | AF0R | AFGV | AFOT | AG0G |
-| AI0G | AJ0O | AJGS | AJOI | AK0H | AM0H | AN0P | ANGT | ANOJ | AO0M |
-| AQ0M | AR0U | ARGI | AROG | AS0N | AU0N | AV0V | AVGJ | AVOH | B00K |
-| B20K | B30S | B3GG | B3OM | B40L | B60L | B70T | B7GH | B7ON | B80Q |
-| BA0Q | BB0I | BBGM | BBOK | BC0R | BE0R | BF0J | BFGN | BFOL | BG0O |
-| BI0O | BJ0G | BJGK | BJOQ | BK0P | BM0P | BN0H | BNGL | BO0U | BQ0U |
-| BR0M | BRGQ |
-
+| GB | Flappy Special B | | | | | | | | |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+|      | A20S | A30K | A3GO | A3OU | A40T | A60T | A70L | A7GP | A7OV |
+| A80I | AA0I | AB0Q | ABGU | ABOS | AC0J | AE0J | AF0R | AFGV | AFOT |
+| AG0G | AI0G | AJ0O | AJGS | AJOI | AK0H | AM0H | AN0P | ANGT | ANOJ |
+| AO0M | AQ0M | AR0U | ARGI | AROG | AS0N | AU0N | AV0V | AVGJ | AVOH |
+| B00K | B20K | B30S | B3GG | B3OM | B40L | B60L | B70T | B7GH | B7ON |
+| B80Q | BA0Q | BB0I | BBGM | BBOK | BC0R | BE0R | BF0J | BFGN | BFOL |
+| BG0O | BI0O | BJ0G | BJGK | BJOQ | BK0P | BM0P | BN0H | BNGL | BO0U |
+| BQ0U | BR0M | BRGQ | BROO | BS0V | BU0V | BV0N | BVGR | BVOP | BVSU |
 
 | PC88 | Flappy |
 | :---: | :---: |
