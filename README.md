@@ -137,6 +137,8 @@ Flappy ROM:
 [aN] = Alternative ROM. (TOSEC dump info)
 </pre>
 
+![PC98](https://github.com/kyomahooin/Flappy/raw/master/Flappy_PC98.png "Flappy")
+
 PC98
 
 <pre>
@@ -155,22 +157,18 @@ Esc - Exit.
 Space -Shoot.
 </pre>
 
+![GB](https://github.com/kyomahooin/Flappy/raw/master/Flappy_GB.png "Flappy Special")
+
 GB
 
 <pre>
 Can crash grey stone falling on head pressing up. 
 </pre>
 
-TODO
+![MSX](https://github.com/kyomahooin/Flappy/raw/master/Flappy_MSX.png "Flappy Limited")
 
+MSX
 
-
-
-<pre>
--Disable sound, softkey, statusbar, menu.
--Default setttings.
--Default reset.
-</pre>
 
 MAME
 
