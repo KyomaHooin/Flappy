@@ -173,6 +173,11 @@ MSX
 
 NES
 
+W - Code menu
+Q - Pause
+
+Can move dead modies.
+
 1987
 
 MAME
