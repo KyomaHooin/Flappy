@@ -169,6 +169,9 @@ Can crash grey stone falling on head pressing up.
 
 MSX
 
+![NES](https://github.com/kyomahooin/Flappy/raw/master/Flappy_NES.png "Flappy")
+
+NES
 
 MAME
 
